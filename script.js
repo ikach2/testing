@@ -3,11 +3,11 @@ const barCtx = document.getElementById('barChart').getContext('2d');
 new Chart(barCtx, {
   type: 'bar', // chart type
   data: {
-    labels: ['Red', 'Blue', 'Yellow', 'Green'], // x-axis labels
+    labels: ['AI Generated', 'Custom Made', 'Suggested'], // x-axis labels
     datasets: [{
       label: 'Votes',
-      data: [12, 19, 3, 5], // values for each bar
-      backgroundColor: ['red', 'blue', 'yellow', 'green']
+      data: [12, 19, 3] ,// values for each bar
+      backgroundColor: ['#0a2a45', '#137cd4', '#6bbcff']
     }]
   },
   options: {
@@ -37,11 +37,11 @@ const pieCtx = document.getElementById('pieChart').getContext('2d');
 new Chart(pieCtx, {
   type: 'pie',
   data: {
-    labels: ['Apples', 'Bananas', 'Cherries'],
+    labels: ['Happy', 'Confused', 'Excited'],
     datasets: [{
-      label: 'Fruit Share',
+      label: 'Emotions of Misty',
       data: [30, 45, 25],
-      backgroundColor: ['red', 'yellow', 'purple']
+      backgroundColor: ['#ffd663', '#90fce0', '#eb91ff']
     }]
   },
   options: {
